@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     backdrop-filter: blur(10px) brightness(1.2); /* Add blur and brightness */
     filter: brightness(1.2); /* Add a little tint of white color */
-    height: 1000vh;
+    height: 100%;
     margin: 0;
     scroll-snap-stop: start;
 }
@@ -26,12 +26,25 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 nav a {
     text-decoration: none;
     color: #bfbfbf;
     font-size: 18px; /* Increase the font size */
     font-weight: bold; /* Make the font weight bold */
     transition: all 0.3s ease; /* Add a transition effect */
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 nav a:hover {
