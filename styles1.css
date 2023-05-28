@@ -1,0 +1,103 @@
+/* General styles */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* Add this line for smooth horizontal scrolling */
+}
+body {
+    background-image:url(./images.jfif);
+    background-attachment: fixed; /* Add this line to create a parallax effect */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px) brightness(1.2); /* Add blur and brightness */
+    filter: brightness(1.2); /* Add a little tint of white color */
+    height: 1000vh;
+    margin: 0;
+    scroll-snap-stop: start;
+}
+h1, h2, h3, h4, h5 {
+    margin-bottom: 10px;
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    color: black; /* Change the text color to black */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 18px; /* Increase the font size */
+    font-weight: bold; /* Make the font weight bold */
+    transition: all 0.3s ease; /* Add a transition effect */
+}
+
+nav a:hover {
+    color: #82a8d1; /* Change the hover color to a blue */
+}
+
+.navigation {
+    display: flex; /* Display the navigation links as a flex container */
+    justify-content: space-between; /* Distribute the links evenly */
+    background: #594a4a; /* Add a background color to the navigation */
+    padding: 15px; /* Add padding to the navigation container */
+}
+.info {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.motto {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.probs {
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex; /* Add a display flex container */
+    justify-content: space-between; /* Distribute the footer items evenly */
+    flex-wrap: wrap; /* Allow the footer items to wrap */
+}
+footer li {
+    margin: 0 10px; /* Add spacing between the list items */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display:inline;
+}
+footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
